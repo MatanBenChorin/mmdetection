@@ -14,10 +14,10 @@ result = inference_detector(model, img)
 # visualize the results in a new window
 model.show_result(img, result)
 # or save the visualization results to image files
-model.show_result(img, result, out_file='/home/matanb/PycharmProjects/mmdetection/tools/matanben_tools/results/images/result.jpg')
+model.show_result(img, result, out_file='/tools/our_tools/results/images/result.jpg')
 
 # test a video and show the results
 video = mmcv.VideoReader('../../demo/demo.mp4')
 for idx,frame in enumerate(video):
     result = inference_detector(model, frame)
-    model.show_result(frame, result, wait_time=1, out_file=f'/home/matanb/PycharmProjects/mmdetection/tools/matanben_tools/results/video/result_frame_{idx}.jpg')
+    model.show_result(frame, result, wait_time=1, out_file=f'/tools/our_tools/results/video/result_frame_{idx}.jpg')
