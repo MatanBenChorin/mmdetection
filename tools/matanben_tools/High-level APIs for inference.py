@@ -14,7 +14,7 @@ result = inference_detector(model, img)
 # visualize the results in a new window
 model.show_result(img, result)
 # or save the visualization results to image files
-model.show_result(img, result, out_file='//home/matanb/PycharmProjects/mmdetection/tools/matanben_tools/results/images/result.jpg')
+model.show_result(img, result, out_file='/home/matanb/PycharmProjects/mmdetection/tools/matanben_tools/results/images/result.jpg')
 
 # test a video and show the results
 video = mmcv.VideoReader('../../demo/demo.mp4')
