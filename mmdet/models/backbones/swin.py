@@ -1,3 +1,4 @@
+# Copyright (c) OpenMMLab. All rights reserved.
 import warnings
 from collections import OrderedDict
 from copy import deepcopy
@@ -503,7 +504,7 @@ class SwinTransformer(BaseModule):
         use_abs_pos_embed (bool): If True, add absolute position embedding to
             the patch embedding. Defaults: False.
         act_cfg (dict): Config dict for activation layer.
-            Default: dict(type='LN').
+            Default: dict(type='GELU').
         norm_cfg (dict): Config dict for normalization layer at
             output of backone. Defaults: dict(type='LN').
         with_cp (bool, optional): Use checkpoint or not. Using checkpoint
@@ -515,7 +516,7 @@ class SwinTransformer(BaseModule):
             to convert some keys to make it compatible.
             Default: False.
         frozen_stages (int): Stages to be frozen (stop grad and set eval mode).
-            -1 means not freezing any parameters.
+            Default: -1 (-1 means not freezing any parameters).
         init_cfg (dict, optional): The Config for initialization.
             Defaults to None.
     """
