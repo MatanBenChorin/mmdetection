@@ -29,7 +29,7 @@ def genuine_coco():
     run_test(config_file, checkpoint_file, imgs_result_dir)
 
 def slim_coco():
-    config_file = 'configs/my_configs/faster_rcnn_r50_fpn_1x_coco_slim.py'
+    config_file = 'my_dir/my_configs/faster_rcnn_r50_fpn_1x_coco_slim.py'
     checkpoint_file = 'checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth'
     imgs_result_dir = 'my_dir/results/faster_rcnn_r50_fpn_1x_results/imgs'
     run_test(config_file, checkpoint_file, imgs_result_dir)
