@@ -11,9 +11,11 @@ import os
 
 def main():
     os.chdir("../../")
-    sys.argv.append("configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py")
-    sys.argv.append("checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth")
-    sys.argv.append("--show-dir=my_dir/results/faster_rcnn_r50_fpn_1x_results")
+    sys.argv.append("configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco.py") # CONFIG_FILE
+    sys.argv.append("checkpoints/faster_rcnn_r50_fpn_1x_coco_20200130-047c8118.pth") # CHECKPOINT_FILE
+    sys.argv.append("--show-dir=my_dir/results/faster_rcnn_r50_fpn_1x_results/imgs")
+    sys.argv.append("--show-dir=my_dir/results/faster_rcnn_r50_fpn_1x_results/imgs")
+    sys.argv.append("--show")
     test.main()
 
 
