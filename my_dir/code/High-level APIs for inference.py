@@ -22,3 +22,4 @@ video = mmcv.VideoReader('../../demo/demo.mp4')
 for idx, frame in enumerate(video):
     result = inference_detector(model, frame)
     model.show_result(frame, result, wait_time=0,out_file=f'../results/video/frame_{idx}.jpg')
+
