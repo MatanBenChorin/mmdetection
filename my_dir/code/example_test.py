@@ -14,7 +14,7 @@ def run_test(config_file,checkpoint_file,imgs_result_dir,score_thresh=None,flag_
     os.chdir("../../")
     sys.argv.append(config_file)  # CONFIG_FILE
     sys.argv.append(checkpoint_file)  # CHECKPOINT_FILE
-    if(flag_deubg_show!=None):
+    if(flag_deubg_show!=False):
         sys.argv.append("--show") # detection results will be plotted on the images and shown in a new window. used for debugging and visualization please comment --show-dir
     else:
         sys.argv.append("--show-dir=" + imgs_result_dir)
