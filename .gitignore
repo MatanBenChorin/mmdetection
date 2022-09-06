@@ -122,4 +122,3 @@ work_dirs/
 *.py~
 *.sh~
 /data/
-/data__/
